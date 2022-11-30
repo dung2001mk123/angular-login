@@ -1,7 +1,7 @@
 <div class="content-wrapper">
   <div class="left-container">
     <h2>MY PAGE</h2>
-    <img src="login.png" width="256px" height="256px" alt="login-icon">
+    <img src="../assets/login.png" width="512px" height="512px" alt="login-icon">
   </div>
   <div class="right-container">
     <h2>Welcome to the Login page!</h2>
@@ -30,10 +30,12 @@
       <label class="check-text">Remember me for next time login</label>
     </div>
     <br>
-    <button>LOGIN</button>
+    <button [routerLink]="'/home-page'">LOGIN</button>
     <br>
     <br>
     <span>Don't have an account? </span>
     <a href="#">Create an account</a>
   </div>
 </div>
+<router-outlet></router-outlet>
+
